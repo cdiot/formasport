@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="public/css/style.css" />
+  <title>Accueil | Toutes les réunions - Formasport</title>
+</head>
+
+<body class="container">
+  <header class="column navbar">
+    <p class="navbar-logo">FormaSPORT</p>
+    <nav>
+      <ul class="navbar-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="add.html">Réunion</a></li>
+        <li><a href="chat.html">Messagerie</a></li>
+        <li><a href="logout.html">Déconnexion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="column">
+
+    <aside class="row sidebar">
+      <p class="sidebar-user">
+        <span>Bonjour, mme Claude Arch</span>
+        <span>Archaoui.Claude@formasport.fr</span>
+        <span>Formateur de type BEN.</span>
+      </p>
+
+      <nav class="row sidebar-links">
+        <ul>
+          <li><a href="index.html">Toutes les réunions</a></li>
+          <li><a href="index.html">Vos réunions</a></li>
+          <li><a href="index.html">Réunion invité</a></li>
+          <li><a href="chat.html">Réunions passé</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="row">
+      <h1>Liste des messages</h1>
+      <div class="messages">
+
+
+        <div class="message">
+          <span class="date">23h22</span>
+          <span class="author">Claude arch</span>
+          <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus!</span>
+        </div>
+
+
+        <div class="message"> 
+          <span class="date">23h22</span>
+          <span class="author">Dominique Delatre</span>
+          <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus!</span>
+        </div>
+
+
+        <div class="message"> 
+          <span class="date">23h22</span>
+          <span class="author">Claude Arch</span>
+          <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus!</span>
+        </div>
+      </div>
+
+      <div class="user-inputs">
+        <form action="#">
+          <input type="text" id="message" name="message" placeholder="Entrez votre message" />
+
+          <input type="submit" />
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="column">Les marques et droit d'auteur sont la propriété de leurs propriétaires respectifs | © 20xx Tous
+    droits réservés |
+    DIOT Christopher
+  </footer>
+  <script src="public/js/addGuest.js"></script>
+  <script src="public/js/addTimeSlot.js"></script>
+</body>
+
+</html>

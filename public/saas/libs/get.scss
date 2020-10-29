@@ -1,0 +1,30 @@
+.meeting {
+  padding: 5px 2%;
+  line-height: 1.5;
+  margin: 20px;
+  border-radius: 3px;
+  h2, h3 {
+    color: #3a547c;
+  }
+  p {
+    color: #313131;
+  }
+  ul li {
+      display: inline-block;
+    }
+}
+
+.guest-timeslot {
+  background: #fbad31;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+.unavailable {
+  background-color: red;
+}
+
+.available {
+  background: #fbad31;
+}

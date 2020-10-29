@@ -1,0 +1,136 @@
+@import "libs/home.scss";
+@import "libs/get.scss";
+@import "libs/add.scss";
+@import "libs/chat.scss";
+@import "libs/other.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* façon dont la hauteur et la largeur totale d'un élément est calculée */
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+main {
+	line-height: 1.5;
+	flex: 1;
+	--shadow: 0px 5px 6px #a8a8a8;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	min-height: 100vh;
+
+	.column {
+		display: flex;
+		flex-direction: row;
+
+		.row:nth-child(1) {
+			flex: 1;
+		}
+
+		.row:nth-child(2) {
+			flex: 4;
+		}
+	}
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: #aa1218;
+	align-items: center;
+	padding: 10px 10%;
+}
+.navbar-logo {
+	font-weight: bold;
+	color: #fff;
+	font-size: 24px;
+}
+.navbar-links {
+	list-style: none;
+	li {
+		display: inline-block;
+		padding: 0 20px;
+		a {
+			font-size: 16px;
+			font-weight: bold;
+			transition: all 0.3s ease 0s;
+			color: #fff;
+			&:hover {
+				padding: 10px;
+				border-style: solid;
+				border-width: 1px;
+				border-radius: 2px;
+			}
+		}
+	}
+}
+.sidebar-user {
+	padding: 10px;
+	margin: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #f7f0f0;
+}
+.sidebar-links {
+	list-style: none;
+
+	li {
+		display: block;
+		padding: 20px 10%;
+		a {
+			font-size: 16px;
+			color: #000;
+			padding: 5px;
+		}
+		&:hover {
+			background-color: #d7d7d7;
+		}
+	}
+}
+footer {
+	background-color: #4c4c4b;
+	padding: 1em;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	min-height: 35em;
+	margin: 10px;
+	h1 {
+		background-color: #fbad31;
+		color: #fff;
+		padding: 0 5%;
+	}
+}
+
+// tablette
+@media screen and (max-width: 1024px) {
+	.navbar {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+// Mobile
+@media screen and (max-width: 750px) {
+	.column:nth-child(1) {
+		display: flex;
+		flex-direction: column;
+	}
+	.column:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+	}
+	.navbar {
+		display: flex;
+		justify-content: center;
+		.navbar-links li {
+			display: inline-block;
+			padding: 0 2px;
+		}
+	}
+}

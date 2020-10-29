@@ -1,0 +1,88 @@
+.title {
+    font-weight: bold;
+    font-style: normal;
+}
+
+form {
+    padding: 5px 2%;
+    line-height: 1.5;
+    margin: 20px;
+    --form-shadow: 1px 1px 4px #ebebeb;
+    --form-radius: 3px;
+    --form-submit-shadow: 1px 1px 4px #dadada;
+}
+
+form label,
+.label-js {
+    display: block;
+    margin: 0px 0px 25px 0px;
+}
+
+form label > span {
+    width: 110px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+}
+
+form span.required {
+    color: red;
+}
+
+form input,
+select,
+.input-js {
+    width: 48%;
+}
+
+form input,
+form textarea,
+form select,
+.input-js {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #c2c2c2;
+    box-shadow: var(--form-shadow);
+    -moz-box-shadow: var(--form-shadow);
+    -webkit-box-shadow: var(--form-shadow);
+    border-radius: var(--form-radius);
+    -webkit-border-radius: var(--form-radius);
+    -moz-border-radius: var(--form-radius);
+    padding: 7px;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus,
+.input-js {
+    border: 1px solid #fbad31;
+}
+
+textarea {
+    height: 100px;
+    width: 48%;
+}
+
+input[type="submit"],
+button[type="button"],
+.btnAddDate {
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #fbad31;
+    color: #fff;
+    box-shadow: var(--form-submit-shadow);
+    -moz-box-shadow: var(--form-submit-shadow);
+    -webkit-box-shadow: var(--form-submit-shadow);
+    border-radius: var(--form-radius);
+    -webkit-border-radius: var(--form-radius);
+    -moz-border-radius: var(--form-radius);
+    margin: 2em;
+}
+
+input[type="submit"]:hover,
+button[type="button"]:hover {
+    background: #ff9d00;
+    color: #fff;
+}
