@@ -99,4 +99,15 @@ function addTimeSlot()
 			  IemeDate.value = A-1;
 }
 
+document.getElementById("addMeeting").addEventListener("submit", function() {
+var error;
+	 
+		var dates = this.getElementsByTagName("input");
+	 
+		for (var i = 0; i < dates.length; i++) {
+			if (!dates[i].value) {
+				alert('Veuillez renseigner tous les champs');
+			}
+		}
+	});
 

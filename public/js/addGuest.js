@@ -1,9 +1,9 @@
 
 
 //fonction ajout formateur
-function addGuest()
+function addGuest(tab_formateur)
 {
-	var tab_formateur= ['Claude', 'Dominique'];
+	// var tab_formateur= ['Claude', 'Dominique'];
     if ( typeof this.I == 'undefined' ) this.I = 1;
 //Element parent
 	    var parent = document.getElementById("guest");
